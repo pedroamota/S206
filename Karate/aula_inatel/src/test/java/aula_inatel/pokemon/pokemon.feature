@@ -15,8 +15,21 @@ Scenario: Testando retorno com informações invalidas
 
 Scenario: Testando retorno pikachu e verificando JSON
     Given url url_base
-    And path "pokemon/pikachu"
+    And path "pokemon/pikachu/"
     When method get
     Then status 200
     And match response.name == "pikachu"
     And match response.id == 25
+
+Scenario: Testando retorno "Pokemon Red" e entrando em um dos arrays de idiomas e testando o retorno em JSON
+    Given url url_base
+    And path "version/1/"
+    When method get
+    Then status 200
+    And def idioma = $.names[5].language.url
+    And print idioma
+    And url idioma
+    When method get
+    Then status 200
+    And match response.name == "es"
+    And match response.id == 7
