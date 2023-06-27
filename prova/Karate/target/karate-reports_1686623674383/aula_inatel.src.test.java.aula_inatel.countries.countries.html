@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("da6d36ac-ddd2-4887-a83f-13ae2c254dc1");
+    posthog.capture("report_feature",{karate_version:"1.4.0-SNAPSHOT",karate_meta:"vscode:0.8.0"});
+  }
+});
+</script>
+
+    <title>aula_inatel.src.test.java.aula_inatel.countries.countries</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-06-12 10:44:59 p.m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Testando retorno</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">aula_inatel/src/test/java/aula_inatel/countries/countries.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testando Api de paises</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Testando retorno</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>23911</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://restcountries.com/v3.1/name/brasil&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">169</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">23742</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">22:44:36.638 request:
+1 &gt; GET https://restcountries.com/v3.1/name/brasil
+1 &gt; Host: restcountries.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:44:59.253 response time in milliseconds: 905
+1 &lt; 200
+1 &lt; Date: Tue, 13 Jun 2023 01:44:38 GMT
+1 &lt; Server: Apache/2.4.38 (Debian)
+1 &lt; Cache-Control: public, immutable, max-age=31556926
+1 &lt; Content-Type: application/json
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+[{&quot;name&quot;:{&quot;common&quot;:&quot;Brazil&quot;,&quot;official&quot;:&quot;Federative Republic of Brazil&quot;,&quot;nativeName&quot;:{&quot;por&quot;:{&quot;official&quot;:&quot;República Federativa do Brasil&quot;,&quot;common&quot;:&quot;Brasil&quot;}}},&quot;tld&quot;:[&quot;.br&quot;],&quot;cca2&quot;:&quot;BR&quot;,&quot;ccn3&quot;:&quot;076&quot;,&quot;cca3&quot;:&quot;BRA&quot;,&quot;cioc&quot;:&quot;BRA&quot;,&quot;independent&quot;:true,&quot;status&quot;:&quot;officially-assigned&quot;,&quot;unMember&quot;:true,&quot;currencies&quot;:{&quot;BRL&quot;:{&quot;name&quot;:&quot;Brazilian real&quot;,&quot;symbol&quot;:&quot;R$&quot;}},&quot;idd&quot;:{&quot;root&quot;:&quot;+5&quot;,&quot;suffixes&quot;:[&quot;5&quot;]},&quot;capital&quot;:[&quot;Brasília&quot;],&quot;altSpellings&quot;:[&quot;BR&quot;,&quot;Brasil&quot;,&quot;Federative Republic of Brazil&quot;,&quot;República Federativa do Brasil&quot;],&quot;region&quot;:&quot;Americas&quot;,&quot;subregion&quot;:&quot;South America&quot;,&quot;languages&quot;:{&quot;por&quot;:&quot;Portuguese&quot;},&quot;translations&quot;:{&quot;ara&quot;:{&quot;official&quot;:&quot;جمهورية البرازيل الاتحادية&quot;,&quot;common&quot;:&quot;البرازيل&quot;},&quot;bre&quot;:{&quot;official&quot;:&quot;Republik Kevreel Brazil&quot;,&quot;common&quot;:&quot;Brazil&quot;},&quot;ces&quot;:{&quot;official&quot;:&quot;Brazilská federativní republika&quot;,&quot;common&quot;:&quot;Brazílie&quot;},&quot;cym&quot;:{&quot;official&quot;:&quot;Gweriniaeth Ffederal Brasil&quot;,&quot;common&quot;:&quot;Brasil&quot;},&quot;deu&quot;:{&quot;official&quot;:&quot;Föderative Republik Brasilien&quot;,&quot;common&quot;:&quot;Brasilien&quot;},&quot;est&quot;:{&quot;official&quot;:&quot;Brasiilia Liitvabariik&quot;,&quot;common&quot;:&quot;Brasiilia&quot;},&quot;fin&quot;:{&quot;official&quot;:&quot;Brasilian liittotasavalta&quot;,&quot;common&quot;:&quot;Brasilia&quot;},&quot;fra&quot;:{&quot;official&quot;:&quot;République fédérative du Brésil&quot;,&quot;common&quot;:&quot;Brésil&quot;},&quot;hrv&quot;:{&quot;official&quot;:&quot;Savezne Republike Brazil&quot;,&quot;common&quot;:&quot;Brazil&quot;},&quot;hun&quot;:{&quot;official&quot;:&quot;Brazil Szövetségi Köztársaság&quot;,&quot;common&quot;:&quot;Brazília&quot;},&quot;ita&quot;:{&quot;official&quot;:&quot;Repubblica federativa del Brasile&quot;,&quot;common&quot;:&quot;Brasile&quot;},&quot;jpn&quot;:{&quot;official&quot;:&quot;ブラジル連邦共和国&quot;,&quot;common&quot;:&quot;ブラジル&quot;},&quot;kor&quot;:{&quot;official&quot;:&quot;브라질 연방 공화국&quot;,&quot;common&quot;:&quot;브라질&quot;},&quot;nld&quot;:{&quot;official&quot;:&quot;Federale Republiek Brazilië&quot;,&quot;common&quot;:&quot;Brazilië&quot;},&quot;per&quot;:{&quot;official&quot;:&quot;جمهوری فدراتیو برزیل&quot;,&quot;common&quot;:&quot;برزیل&quot;},&quot;pol&quot;:{&quot;official&quot;:&quot;Federacyjna Republika Brazylii&quot;,&quot;common&quot;:&quot;Brazylia&quot;},&quot;por&quot;:{&quot;official&quot;:&quot;República Federativa do Brasil&quot;,&quot;common&quot;:&quot;Brasil&quot;},&quot;rus&quot;:{&quot;official&quot;:&quot;Федеративная Республика Бразилия&quot;,&quot;common&quot;:&quot;Бразилия&quot;},&quot;slk&quot;:{&quot;official&quot;:&quot;Brazílska federatívna republika&quot;,&quot;common&quot;:&quot;Brazília&quot;},&quot;spa&quot;:{&quot;official&quot;:&quot;República Federativa del Brasil&quot;,&quot;common&quot;:&quot;Brasil&quot;},&quot;srp&quot;:{&quot;official&quot;:&quot;Савезна Република Бразил&quot;,&quot;common&quot;:&quot;Бразил&quot;},&quot;swe&quot;:{&quot;official&quot;:&quot;Förbundsrepubliken Brasilien&quot;,&quot;common&quot;:&quot;Brasilien&quot;},&quot;tur&quot;:{&quot;official&quot;:&quot;Brezilya Federal Cumhuriyeti&quot;,&quot;common&quot;:&quot;Brezilya&quot;},&quot;urd&quot;:{&quot;official&quot;:&quot;وفاقی جمہوریہ برازیل&quot;,&quot;common&quot;:&quot;برازیل&quot;},&quot;zho&quot;:{&quot;official&quot;:&quot;巴西联邦共和国&quot;,&quot;common&quot;:&quot;巴西&quot;}},&quot;latlng&quot;:[-10.0,-55.0],&quot;landlocked&quot;:false,&quot;borders&quot;:[&quot;ARG&quot;,&quot;BOL&quot;,&quot;COL&quot;,&quot;GUF&quot;,&quot;GUY&quot;,&quot;PRY&quot;,&quot;PER&quot;,&quot;SUR&quot;,&quot;URY&quot;,&quot;VEN&quot;],&quot;area&quot;:8515767.0,&quot;demonyms&quot;:{&quot;eng&quot;:{&quot;f&quot;:&quot;Brazilian&quot;,&quot;m&quot;:&quot;Brazilian&quot;},&quot;fra&quot;:{&quot;f&quot;:&quot;Brésilienne&quot;,&quot;m&quot;:&quot;Brésilien&quot;}},&quot;flag&quot;:&quot;\uD83C\uDDE7\uD83C\uDDF7&quot;,&quot;maps&quot;:{&quot;googleMaps&quot;:&quot;https://goo.gl/maps/waCKk21HeeqFzkNC9&quot;,&quot;openStreetMaps&quot;:&quot;https://www.openstreetmap.org/relation/59470&quot;},&quot;population&quot;:212559409,&quot;gini&quot;:{&quot;2019&quot;:53.4},&quot;fifa&quot;:&quot;BRA&quot;,&quot;car&quot;:{&quot;signs&quot;:[&quot;BR&quot;],&quot;side&quot;:&quot;right&quot;},&quot;timezones&quot;:[&quot;UTC-05:00&quot;,&quot;UTC-04:00&quot;,&quot;UTC-03:00&quot;,&quot;UTC-02:00&quot;],&quot;continents&quot;:[&quot;South America&quot;],&quot;flags&quot;:{&quot;png&quot;:&quot;https://flagcdn.com/w320/br.png&quot;,&quot;svg&quot;:&quot;https://flagcdn.com/br.svg&quot;,&quot;alt&quot;:&quot;The flag of Brazil has a green field with a large yellow rhombus in the center. Within the rhombus is a dark blue globe with twenty-seven small five-pointed white stars depicting a starry sky and a thin white convex horizontal band inscribed with the national motto &#39;Ordem e Progresso&#39; across its center.&quot;},&quot;coatOfArms&quot;:{&quot;png&quot;:&quot;https://mainfacts.com/media/images/coats_of_arms/br.png&quot;,&quot;svg&quot;:&quot;https://mainfacts.com/media/images/coats_of_arms/br.svg&quot;},&quot;startOfWeek&quot;:&quot;monday&quot;,&quot;capitalInfo&quot;:{&quot;latlng&quot;:[-15.79,-47.88]},&quot;postalCode&quot;:{&quot;format&quot;:&quot;#####-###&quot;,&quot;regex&quot;:&quot;^(\\d{8})$&quot;}}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
